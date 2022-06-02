@@ -1,0 +1,167 @@
+:root {
+  --color-ash-one: rgb(241, 241, 241);
+  --color-yellow-one: rgb(218, 149, 2);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-ash-one);
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+  padding-bottom: 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: var(--color-ash-one);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.logo > img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.header-text > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+form > input {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+
+form > input:first-of-type {
+  width: 100%;
+  max-width: 300px;
+}
+
+.second-input {
+  background-color: var(--color-yellow-one);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+}
+
+.second-input:hover {
+  cursor: pointer;
+}
+
+.card {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card svg {
+  color: var(--color-yellow-one);
+  font-size: 3rem;
+}
+.card > div:first-of-type {
+  width: 100%;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > div:last-of-type {
+  margin-right: 3rem;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.card-container {
+  padding-bottom: 4rem;
+}
+
+.how {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#pricing {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+#pricing > div {
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  /* padding: 2rem; */
+  padding-top: 0.5rem;
+}
+#pricing > div > h3 {
+  background-color: rgb(189, 187, 187);
+  width: 100%;
+  height: 100%;
+  margin-top: -0.5rem;
+  padding: 1rem;
+}
+#pricing > div b {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+#pricing > div p {
+  font-size: 1.1rem;
+}
+
+#pricing > div button {
+  margin: 2rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  background-color: var(--color-yellow-one);
+  border: none;
+}
+
+footer {
+  text-align: right;
+  background-color: rgb(189, 187, 187);
+  padding: 1rem;
+}
